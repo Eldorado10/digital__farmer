@@ -10,7 +10,7 @@ function App() {
     <div className='tiny5-regular'>
       <Header></Header>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home/>} />
         {/* <Route path="/donate" element={<Donation />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contract" element={<Contract />} />

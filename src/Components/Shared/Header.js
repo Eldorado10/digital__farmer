@@ -46,12 +46,12 @@ export const Header = () => {
             {menuItems}
           </ul>
         </div>
-        <Link to="/" className="btn btn-ghost normal-case text-xl">
+        <Link to="/" className="btn btn-ghost normal-case text-2xl tracking-widest font-serif">
           Digital Farm
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal p-0">{menuItems}</ul>
+        <ul className="menu menu-horizontal font-bold p-0">{menuItems}</ul>
       </div>
       <label
         htmlFor="dashboard-drawer"
