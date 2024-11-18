@@ -8,7 +8,7 @@ export const Details = () => {
       <div class="hero-content flex-col lg:flex-row">
         <img src={details} class="max-w-sm rounded-lg lg:w-1/2 shadow-2xl" />
         <div className="px-12">
-          <h1 class="text-5xl font-bold">Farmer's Of Bangladesh</h1>
+          <h1 class="text-5xl font-bold font-serif tracking-wider">Farmer's Of Bangladesh</h1>
           <p class="py-6 ">
             Farmers in Bangladesh play a critical role in the nation’s economy,
             with agriculture employing a large portion of the population. They

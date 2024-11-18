@@ -9,22 +9,18 @@ const Footer = () => {
         background: `url(${footer})`,
         backgroundSize: "cover",
       }}
-      className="p-10"
+      className="p-10 bg-opacity-0"
     >
-      <div className="footer mt-5 font-bold text-xl">
+      <div className="footer mt-5 font-bold  text-xl footer-center">
         <nav>
           <h6 class="footer-title">Services</h6>
           <a className="link link-hover">Branding</a>
           <a className="link link-hover">Design</a>
-          <a className="link link-hover">Marketing</a>
-          <a className="link link-hover">Advertisement</a>
         </nav>
         <nav>
           <h6 class="footer-title">Company</h6>
           <a class="link link-hover">About us</a>
           <a class="link link-hover">Contact</a>
-          <a class="link link-hover">Jobs</a>
-          <a class="link link-hover">Press kit</a>
         </nav>
         <nav>
           <h6 class="footer-title">Social</h6>
@@ -65,7 +61,7 @@ const Footer = () => {
           </div>
         </nav>
       </div>
-      <div className="text-center mt-32">
+      <div className="text-center mt-32 text-white font-bold">
         <p>Copyright © 2024 - All right reserved by Shahriar Dip</p>
       </div>
     </footer>

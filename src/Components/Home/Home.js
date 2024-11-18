@@ -12,9 +12,10 @@ export const Home = () => {
         <div>
             <Carosel></Carosel>
             <Banner></Banner>
-           <Details></Details>
+            <Details></Details>
+           
             
-            
+
         </div>
     );
 };
