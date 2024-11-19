@@ -1,43 +1,30 @@
 import React, {  useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link  } from 'react-router-dom';
-// import { AuthContext } from '../../contexts/AuthProvider';
+import { useSignInWithEmailAndPassword} from 'react-firebase-hooks/auth';
+import auth from './firebase.init';
+import { toast } from 'react-toastify';
 
 
 const Login = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
-    // const { signIn } = useContext(AuthContext);
     const [loginError] = useState('');
-    // const [loginUserEmail, setLoginUserEmail] = useState('');
-    // const [token] = useToken(loginUserEmail);
-    // const location = useLocation();
-    // const navigate = useNavigate();
+    const [
+        signInWithEmailAndPassword
+    ] = useSignInWithEmailAndPassword(auth);
 
-    // const from = location.state?.from?.pathname || '/';
-
-    // if (token) {
-    //     navigate(from, { replace: true });
-    // }
+    
 
     const handleLogin = data => {
         console.log(data);
-        // setLoginError('');
-        // signIn(data.email, data.password)
-        //     .then(result => {
-        //         const user = result.user;
-        //         console.log(user);
-        //         // setLoginUserEmail(data.email);
-        //     })
-        //     .catch(error => {
-        //         console.log(error.message)
-        //         setLoginError(error.message);
-        //     });
+        // signInWithEmailAndPassword(data.email, data.password);
+        toast.success("Login success",data.message)
     }
 
     return (
         <div className='h-[800px] flex justify-center items-center '>
             <div className='w-96 p-7 shadow-2xl '>
-                <h2 className='text-4xl text-center font-bold tracking-widest font-serif hover:text-green-600'>Login</h2>
+                <h2 className='text-4xl text-center font-bold tracking-widest font-serif hover:text-green-600'>Member Login</h2>
                 <form onSubmit={handleSubmit(handleLogin)}>
                     <div className="form-control w-full max-w-xs my-5">
                         <label className="label"> <span className="label-text ">E-mail</span></label>

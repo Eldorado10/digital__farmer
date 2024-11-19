@@ -1,5 +1,5 @@
 import * as React from "react";
-import Farmer from "../../New folder/401-a67db987-338d-4632-bad5-ece7ea944e12.jpg";
+import Farmer from "../../Image/New folder/401-a67db987-338d-4632-bad5-ece7ea944e12.jpg";
 export const Banner = () => {
   return (
     <div className="hero bg-base-200 my-5">
